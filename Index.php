@@ -68,7 +68,7 @@
 
        <div class="container" style="margin-bottom: 300px;"> 
            <div class="slide">
-             <div class="item" style="background-imageurl(image/Electrician2.jpg)">
+             <div class="item" style="background-imageurl(C:\xampp\htdocs\alongyou\image\Electrician3.jpg)">
                 <div class="content">
                     <div class="name">cleaning </div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
@@ -229,7 +229,7 @@
        
     </div>
         <!-- start 2st column-->
-         <div class="col-md-4 text-center">
+         <div class="col-md-4 text-center" style="margin-left:799px; margin-top:-412px;">
          <strong> Headquater:</strong><br>
          along you LTD <br>
             avni vihar,Raipur<br>
@@ -293,6 +293,7 @@
     </div>
     <hr>
     <p class="copyright">Easy Tutorials © 2024-all Right Reserved</p>
+    <p style="display:flex; items:center; justify-content:center"><a href ="Admin/login.php">Admin Login</a></p>
 </footer>         
 <script src="js\javascript1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
