@@ -14,6 +14,7 @@ if(isset($_SESSION['is_adminlogin'])){
  <?php 
   $sql = "SELECT * FROM technician_tb"; 
   $result = $conn->query($sql);
+  $rows = $result->fetch_assoc();
   if($result->num_rows > 0){
    echo '<table class="table">';
     echo '<thead>';
@@ -27,7 +28,7 @@ if(isset($_SESSION['is_adminlogin'])){
      echo '</tr>';
     echo '</thead>';
     echo '<tbody>';
-     while($row = $result->fetch_assoc()){
+     while($rows = $result->fetch_assoc()){
       echo '<tr>';
        echo '<td>'.$rows["empid"].'</td>';
        echo '<td>'.$rows["empName"].'</td>';

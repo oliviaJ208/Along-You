@@ -21,17 +21,21 @@ if($_SESSION['is_login']){
  </form>
  <?php 
   if(isset($_REQUEST['checkid'])){
+
    if($_REQUEST['checkid'] == ""){
     $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
    } else {
     $sql = "SELECT * FROM assignwork_tb WHERE request_id = {$_REQUEST['checkid']}";
     $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
     $rows = $result->fetch_assoc();
-    if(($rows['request_id'] == $_REQUEST['checkid'])){ ?>
+    if(($rows['request_id'] == $_REQUEST['checkid'])){ 
+      ?>
     <h3 class="text-center mt-5">Assigned Work Details</h3>
     <table class="table table-bordered">
      <tbody>
       <tr>
+        
        <td>Request ID</td>
        <td><?php if(isset($rows['request_id'])){echo $rows['request_id'];} ?></td>
       </tr>
@@ -117,9 +121,10 @@ if($_SESSION['is_login']){
       <input class="btn btn-secondary" type="submit" value="Close">
      </form>
     </div>
-    <?php } else {
-     echo '<div class="alert alert-warning mt-4">Your Request is Still Pending</div>';
-    }
+    <?php } 
+    }else {
+      echo '<div class="alert alert-warning mt-4">Your Request is Still Pending</div>';
+     }
    }
  }?>
  <?php if(isset($msg)){echo $msg;} ?>

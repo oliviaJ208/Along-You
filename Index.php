@@ -10,13 +10,12 @@
         <link rel="shortcute icon" href="image\finallogo.png" type="image/x-icon"/>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!-- font Awesome css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- google font -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-      <!-- <link rel="stylesheet" href="../css/ubuntu.css"> -->
+      
       <!-- .costom.css -->
       <link rel="stylesheet" href="css\costom.css">
       <link rel="stylesheet" href="css\costom2.css">
@@ -42,16 +41,16 @@
                 
             
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#registration">Registration</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="Requster/Requesterlogin.php">log In</a></li>
                 <li><a href="#about">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#reg">Registration</a></li>
+                <li><a href="#con">Contact Us</a></li>
 
                 <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
 
                 </li>
              </ul>
@@ -66,48 +65,48 @@
         <!--bootstreap javascript  for toogle-->
     </header> 
 
-       <div class="container" style="margin-bottom: 300px;"> 
+       <div id="home" class="container" style="margin-bottom: 300px;"> 
            <div class="slide">
-             <div class="item" style="background-imageurl(C:\xampp\htdocs\alongyou\image\Electrician3.jpg)">
+             <div class="item" style="background-image:url(image/Electrician3.jpg)">
                 <div class="content">
                     <div class="name">cleaning </div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
-                    <button  style="text-color:info">See more</button>
+                    <button>See more</button>
                 </div>
              </div>
         <div class="item" style="background-image:url(image/plumber2.jpg)">
             <div class="content">
-                   <div class="name">cleaning</div>
+                   <div class="name">Plumber</div>
                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
-                   <button>See more</button>
+                   <a href="serviceses/plumber.php" ><button class="btn btn-info">See more</button></a>
             </div>
         </div>
-        <div class="item" style="background-image:url(image/cleaner2.jpg)">
+        <div class="item" style="background-image:url(image/carwash.jpg)">
+            <div class="content">
+                   <div class="name">cleaning</div>
+                   <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
+                   <a href="serviceses/car.php"> <button class="btn btn-info">See more</button></a>
+            </div>
+        </div>
+        <div class="item" style="background-image:url(image/carpenter.webp)">
             <div class="content">
                    <div class="name">cleaning</div>
                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
                    <button>See more</button>
             </div>
         </div>
-        <div class="item" style="background-image:url(image/cleaner2.jpg)">
-            <div class="content">
-                   <div class="name">cleaning</div>
-                   <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
-                   <button>See more</button>
-            </div>
-        </div>
-        <div class="item" style="background-image:url(image/cleaner2.jpg)">
+        <div class="item" style="background-image:url(image/painter4.jpeg)">
             <div class="content">
                   <div class="name">cleaning</div>
                   <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
                   <button>See more</button>
             </div>
         </div>
-          <div class="item" style="background-image:url(image/cleaner2.jpg)">
+          <div class="item" style="background-image:url(image/cleaner1.jpg)">
             <div class="content">
                  <div class="name">cleaning</div>
                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo libero molestiae saepe maiores dignissimos reiciendis minima fuga similique, consectetur non facilis qui dolor quisquam distinctio, iusto autem rem.</div>
-                 <button>See more</button>
+                   <a href="serviceses/cleaning.php" ><button class="btn btn-info">See more</button></a>
             </div>
           </div>
            </div>
@@ -142,13 +141,13 @@
     <!-- End introduction section  -->
 
     <!-- start services section -->
-     <div class="container text-center border-bottom" style="margin-top: 1500px;">
+     <div id="reg"class="container text-center border-bottom" style="margin-top: 1500px;">
         <h2 class="text-center"> Our Services</h2>
 
             <div class="row mt-4">
                 <div class="col-sm-4">
-                    <a href="#"><i class="fa fa-television fa-5x text-success" aria-hidden="true"></i></a>
-                    <h4 class="mt-4"rgin-left:-43px;">Electronic Appliances</h4>
+                    <a href="serviceses/cleaning.php"><i class="fa-solid fa-soap fa-5x text-success" aria-hidden="true"></i></a>
+                    <h4 class="mt-4"rgin-left:-43px;">Cleaning Sevices</h4>
                 </div>
         
                 <div class="col-sm-4">
@@ -220,7 +219,7 @@
     </div>
    </div>
 <!-- start contact us  -->
- <div class="container text-center" style= "margin-top:3600px;">
+ <div id="con" class="container text-center" style= "margin-top:3600px;">
     <h2 class="text-capitalize mb-4"> Contact Us</h2>
      <div class="row">
         <!-- start 1st column-->
@@ -284,10 +283,10 @@
                         </button>
                     </form>
                 <div class="social-icon">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa-brands fa-square-whatsapp fa-3x"></i>
+                <i class="fa-brands fa-square-facebook fa-3x"></i>
+                <i class="fa-brands fa-square-pinterest fa-3x "></i>
+                <i class="fa-brands fa-square-twitter fa-3x"></i>
                 </div>
             </div>
     </div>

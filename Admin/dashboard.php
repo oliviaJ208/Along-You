@@ -9,6 +9,21 @@ if(isset($_SESSION['is_adminlogin'])){
 } else {
    echo "<script> location.href='login.php'</script>";
 }
+$sql = "SELECT max(request_id) AS max_request_id FROM submitrequest_tb";  //start from tablesubmitrequest_tb
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$submitrequest = $row['max_request_id'];
+              //end from table submitrequest_tb
+$sql = "SELECT max(rno) AS max_request_id FROM assignwork_tb";  //start from assignwork_tb
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$assignwork = $row['max_request_id'];
+              //end from table assignwork_tb
+$sql = "SELECT * FROM technician_tb";  //start from assignwork_tb
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$totaltec = $result->num_rows;
+              //end from table assignwork_tb
 ?>
 
         <div><!--  start dashboard 2 column -->
@@ -18,8 +33,8 @@ if(isset($_SESSION['is_adminlogin'])){
       <div class="card text-white bg-danger mb-3" style="max-width:18rem;">
        <div class="card-header">Requests Received</div>
        <div class="card-body">
-        <h4 class="card-title">45</h4>
-        <a class="btn text-white" href="#">View</a>
+        <h4 class="card-title"><?php echo $submitrequest ?></h4>
+        <a class="btn text-white" href="request.php">View</a>
         </div>
       </div>
      </div>
@@ -27,8 +42,8 @@ if(isset($_SESSION['is_adminlogin'])){
       <div class="card text-white bg-success mb-3" style="max-width:18rem;">
        <div class="card-header">Assigned Work</div>
        <div class="card-body">
-        <h4 class="card-title">45</h4>
-        <a class="btn text-white" href="#">View</a>
+        <h4 class="card-title"><?php echo $assignwork ?></h4></h4>
+        <a class="btn text-white" href="work.php">View</a>
        </div>
       </div>
      </div>
@@ -36,8 +51,8 @@ if(isset($_SESSION['is_adminlogin'])){
       <div class="card text-white bg-info mb-3" style="max-width:18rem;">
        <div class="card-header">No. of Technician</div>
        <div class="card-body">
-        <h4 class="card-title">6</h4>
-        <a class="btn text-white" href="#">View</a>
+        <h4 class="card-title"><?php echo $totaltec ?></h4>
+        <a class="btn text-white" href="technician.php">View</a>
        </div>
       </div>
      </div>

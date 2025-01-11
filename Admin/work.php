@@ -14,11 +14,13 @@ if(isset($_SESSION['is_adminlogin'])){
   <?php
    $sql="SELECT * FROM assignwork_tb";
    $result = $conn->query($sql);
-   $rows = $result->fetch_assoc();
+ 
    if($result->num_rows > 0) {
+    $rows = $result->fetch_assoc();
     echo '<table class="table">';
      echo '<thead>';
       echo '<tr>';
+     
        echo '<th scope="col">Req ID</th>';
        echo '<th scope="col">Req Info</th>';
        echo '<th scope="col">Name</th>';
@@ -31,8 +33,9 @@ if(isset($_SESSION['is_adminlogin'])){
       echo '</tr>';
      echo '</thead>';
      echo '<tbody>';
-      while ($rowss = $result->fetch_assoc()){
+      while ($rows = $result->fetch_assoc()){
        echo '<tr>';
+      //  echo " $rowss";
         echo '<td>'.$rows['request_id'].'</td>';
         echo '<td>'.$rows['request_info'].'</td>';
         echo '<td>'.$rows['requester_name'].'</td>';
@@ -50,8 +53,9 @@ if(isset($_SESSION['is_adminlogin'])){
         echo '</form>';
         echo '</td>';
        echo '</tr>';
-      }
-     echo '</tbody>';
+      
+      }    
+   echo '</tbody>';
     echo '</table>';
    } else{
     echo '0 Result';
